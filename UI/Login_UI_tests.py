@@ -9,7 +9,7 @@ def Correct_login_test():
     driver.find_element_by_id('login').click()
     porovnani = driver.find_element_by_id('gologin').text
     assert "Go To Login" == porovnani
-    print("hovínko")
+
 
 def open_web_page():
     return webdriver.Firefox(executable_path=r"C:\Users\sabin\PythonTesting\UI\geckodriver.exe")

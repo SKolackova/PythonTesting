@@ -20,7 +20,7 @@ class TestCase(unittest.TestCase):
         driver.find_element_by_name('username').send_keys('Admin')
         driver.find_element_by_name('password').send_keys('Spatneheslo')
         driver.find_element_by_id('login').click()
-        porovnani = driver.find_element_by_class_name('loginmessage').text    # musím si ještě najít, jak udělat záporné porovnání
+        porovnani = driver.find_element_by_class_name('loginmessage').text    
         self.assertEqual("Login Details Incorrect", porovnani) 
         driver.quit()
 
